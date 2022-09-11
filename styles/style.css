@@ -1,315 +1,496 @@
 @charset "UTF-8";
 
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+
 :root {
+
   --pink: #cc0000;
+
   --light-pink: #b62e65;
+
   --deep-blue: #041b2d;
+
   --blue: #004e9a;
+
   --light-blue: --#428cd4;
-  --hiv-yellow:--#ffc300;
+
+  --hiv-yellow: --#ffc300;
+
 }
 
 body {
+
   font-family: "Gilroy-Bold", sans-serif;
-  background-color:var(--deep-blue);
+
+  background-color: var(--deep-blue);
+
 }
 
 * {
+
   margin: 0px;
+
   padding: 0px;
+
   box-sizing: border-box;
+
 }
+
 .container {
+
   width: 100%;
+
   padding-right: var(--bs-gutter-x, 15px);
+
   padding-left: var(--bs-gutter-x, 15px);
+
   margin-right: auto;
+
   margin-left: auto;
+
 }
 
 .header {
+
   width: 100%;
+
   height: 100px;
+
 }
 
 .header > .logo {
+
   max-width: 100%;
+
   height: 80px;
+
   border-radius: 10px;
+
   margin: 20px;
+
 }
 
 #text1 {
+
   color: var(--pink);
+
   font-family: "Gilroy-Bold", sans-serif;
+
   font-weight: bolder;
+
 }
 
 #btn {
+
   margin-top: 120px;
+
   background-color: var(--blue);
+
   color: white;
+
 }
 
 #lorem {
+
   font-weight: lighter;
+
   font-size: 1.5em;
+
   margin-top: 30px;
+
   color: aliceblue;
+
 }
 
 #form-label {
+
   font-family: "Gilroy-Bold", sans-serif;
+
   font-weight: bolder;
+
   color: var(--deep-blue);
+
 }
 
 #btn2 {
+
   box-shadow: 0 4px 8px 0 rgba(123, 190, 114, 0.2),
+
     0 6px 20px 0 rgba(91, 156, 97, 0.19);
+
   display: flex;
+
 }
 
 #btn2:hover {
+
   background-color: rgb(209, 243, 176);
+
   color: rgb(56, 55, 55);
+
 }
 
 #email {
+
   background-size: contain;
+
   padding-left: 40px;
+
   border-radius: 1px solid var(--light-pink);
+
   height: 50px;
+
   border-radius: 10px;
+
 }
 
 .img-fluid {
+
   padding: 35px;
+
   border-radius: 25px;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
-.img-bounce >  img {
+.img-bounce > img {
+
   animation: bounce 2.5s linear;
+
   animation-iteration-count: infinite;
+
 }
 
 @keyframes bounce {
+
   0% {
+
     transform: translateY(0px);
+
   }
+
   50% {
+
     transform: translateY(-25px);
+
   }
+
   100% {
+
     transform: translateY(0px);
+
   }
+
 }
 
 #btn2 {
+
   background-color: green;
+
   margin-top: 30px;
+
   color: white;
+
   border: none;
+
 }
-.feature{
-  width:100%;
+
+.feature {
+
+  width: 100%;
+
 }
-.feature-container{
+
+.feature-container {
+
   display: block;
-  width:100%;
+
+  width: 100%;
+
 }
 
-.feature-container .feature-sub-title{
+.feature-title{
+
+  font-size: 2em;
+
+}
+
+.feature-container .feature-sub-title {
+
   font-size: 1.2em;
+
   color: whitesmoke;
-  font-family: Gilroy-Bold;
-  width: 100%;
+
+  font-family: "Gilroy-Bold", sans-serif;
+
+  margin:auto;
+
 }
 
-.features .feature-head{
-  color:white;
+.features .feature-head {
+
+  color: white;
+
 }
 
-.feature-container .feature{
+.feature-container .feature {
+
   margin-left: 5px;
+
   width: 100%;
+
 }
 
-.feature-container img{
+.feature-container img {
+
   max-width: 350px;
-  margin-left: 100px;
-  
+
+  margin-top: 20px;
+
 }
 
 #h2 {
+
   color: var(--light-pink);
+
 }
 
 #FAQ {
+
   font-family: "Gilroy-Bold", sans-serif;
+
   font-weight: bolder;
+
 }
 
-.footer {
+.footer{
+
   width: 100%;
-  height: 100%;
+
   text-align: center;
+
   color: whitesmoke;
+
   margin-top: 30px;
+
   margin-bottom: 0;
+
   padding-bottom: 0;
-  background-color:teal;
+
 }
 
 #p {
+
   font-family: "Gilroy-Bold", sans-serif;
+
   font-weight: light;
+
   font-size: 1.6em;
+
   padding-top: 10px;
+
 }
 
-.p{
-  font-size:1.2em;
+.p {
+
+  font-size: 1.2em;
+
 }
 
 .inhood {
+
   color: var(--pink);
+
 }
 
 #twitter {
+
   max-width: 100%;
+
   height: 30px;
+
   margin: 8px;
+
 }
 
 #FAQ {
+
   padding: 10px;
+
   margin: 5px;
+
 }
 
 .loader {
+
   border: 3px solid white;
+
   border-top: 3px solid #187e04;
+
   /* Blue */
+
   border-radius: 50%;
+
   width: 25px;
+
   height: 25px;
+
   animation: spin 1s linear infinite;
+
 }
 
 .app-start {
+
   background-color: #309255;
+
   position: relative;
+
   overflow: hidden;
+
   width: 100%;
+
   margin: 0;
+
 }
 
-
 /* For tablet */
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
   #text1 {
+
     margin-top: 80px;
+
   }
-  .feature-container{
-    display:flex;
-    justify-items: center;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-  }
+
+ 
+
   
-  .feature-container .feature-sub-title{
-  font-size: 30px;
-  }
-  
-   .feature-title{
-    font-size:40px;
-  }
 
   #text2 {
+
     font-size: 3vw;
+
   }
 
   #btn {
+
     position: relative;
+
     right: 380px;
+
     bottom: 150px;
+
   }
 
-
-
   #form-label {
+
     margin-left: 150px;
+
   }
 
   #email {
+
     width: 400px;
+
     margin-left: 150px;
+
   }
 
   #btn2 {
+
     margin-right: 40px;
+
   }
+
 }
 
 /* For laptop */
+
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+
   #btn {
+
     position: relative;
+
     right: 510px;
+
     bottom: 200px;
+
   }
 
-.feature-container{
-    display:flex;
-    justify-items: center;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-  }
-  
   #email {
+
     margin-left: 0px;
+
   }
+
 }
 
 /*For large screen size*/
+
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
+
   #text1 {
+
     margin-top: 60px;
+
   }
 
   #text2 {
+
     font-size: 3vw;
+
   }
 
   #btn {
+
     position: relative;
+
     right: 610px;
+
     bottom: 250px;
+
   }
 
   #form-label {
+
     font-size: 3vw;
+
   }
+
 }
 
 /*For extra large screens*/
+
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
+
   #text1 {
+
     margin-top: 100px;
+
   }
 
   #btn {
+
     position: relative;
+
     right: 735px;
+
     bottom: 280px;
+
   }
 
   #form-label {
+
     font-size: 2vw;
+
   }
+
 }
+
+
+ 
+  
+  
